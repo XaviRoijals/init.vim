@@ -17,9 +17,14 @@ call plug#end()
 set title   
 set number  
 set mouse=a  
-set nowrap  
+set wrap
 set cursorline  
-set colorcolumn=80  
+set colorcolumn=80 
+colorscheme onedark
+
+" No tallar paraules al final de línea
+set formatoptions+=w
+set tw=80
 
 " Tema tabulacions
 set tabstop=4
@@ -42,5 +47,3 @@ let g:minimap_toggle='<leader>gt'
 let g:minimap_width = 2
 hi MinimapCurrentLine ctermfg=Green guifg=#50FA7B guibg=#32302f
 let g:minimap_highlight = 'MinimapCurrentLine'
-
-
